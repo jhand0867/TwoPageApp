@@ -8,9 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    
     @IBOutlet weak var txtName: UITextField!
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    
+    @IBOutlet weak var SegDepartment: UISegmentedControl!
+    
+    // access user object
+    var myUser = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,21 +31,21 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         self.txtName.text = ""
     }
-    
+
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        myUser.name = self.txtName.text
+        myUser.email = self.txtEmail.text
+        myUser.password = self.txtPassword.text
+        myUser.department = self.SegDepartment.selectedSegmentIndex
         
         if segue.identifier == "segueNext1" {
             let dest = segue.destination as! NextPage
-            dest.recName = self.txtName.text
+            dest.myUser  = self.myUser
         }
-        
     }
 
     
-    @IBAction func clickSubmit(_ sender: UIButton) {
-        
-       // NextPage.show(NextPage)
-    }
 }
 

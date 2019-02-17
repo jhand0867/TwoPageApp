@@ -13,6 +13,9 @@
 		7C5E35CD220B6B3F005639D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E35CC220B6B3F005639D1 /* Assets.xcassets */; };
 		7C5E35D0220B6B3F005639D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5E35CE220B6B3F005639D1 /* LaunchScreen.storyboard */; };
 		7C5E35D8220B6D0B005639D1 /* NextPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E35D7220B6D0B005639D1 /* NextPage.swift */; };
+		7C96351822165CF600006655 /* EmailUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C96351722165CF600006655 /* EmailUpdateViewController.swift */; };
+		7CBEFE08220B9E2900ED0371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBEFE07220B9E2900ED0371 /* User.swift */; };
+		7CBEFE0A220BD01A00ED0371 /* LastPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBEFE09220BD01A00ED0371 /* LastPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		7C5E35CF220B6B3F005639D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C5E35D1220B6B3F005639D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5E35D7220B6D0B005639D1 /* NextPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPage.swift; sourceTree = "<group>"; };
+		7C96351722165CF600006655 /* EmailUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailUpdateViewController.swift; sourceTree = "<group>"; };
+		7CBEFE07220B9E2900ED0371 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CBEFE09220BD01A00ED0371 /* LastPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		7C5E35C4220B6B3E005639D1 /* TwoPageApp */ = {
 			isa = PBXGroup;
 			children = (
+				7CBEFE09220BD01A00ED0371 /* LastPage.swift */,
+				7CBEFE07220B9E2900ED0371 /* User.swift */,
 				7C5E35C5220B6B3E005639D1 /* AppDelegate.swift */,
 				7C5E35C7220B6B3E005639D1 /* ViewController.swift */,
 				7C5E35C9220B6B3E005639D1 /* Main.storyboard */,
+				7C96351722165CF600006655 /* EmailUpdateViewController.swift */,
 				7C5E35D7220B6D0B005639D1 /* NextPage.swift */,
 				7C5E35CC220B6B3F005639D1 /* Assets.xcassets */,
 				7C5E35CE220B6B3F005639D1 /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBEFE08220B9E2900ED0371 /* User.swift in Sources */,
 				7C5E35D8220B6D0B005639D1 /* NextPage.swift in Sources */,
 				7C5E35C8220B6B3E005639D1 /* ViewController.swift in Sources */,
+				7CBEFE0A220BD01A00ED0371 /* LastPage.swift in Sources */,
+				7C96351822165CF600006655 /* EmailUpdateViewController.swift in Sources */,
 				7C5E35C6220B6B3E005639D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
